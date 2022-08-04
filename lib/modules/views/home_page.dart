@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               Text("List Posts"),
               Expanded(
                 child:RefreshWidget(
-                      onRefresh:()=>controller.getPosts(),
+                      onRefresh:()=>controller.getPosts(false),
                       keyRefresh: controller.keyRefresh,
                       child: ListView.builder(
                         itemCount: controller.posts.length,
